@@ -1,9 +1,9 @@
-import './Chart.css';
-function Chart(props) {
+import './ChartBar.css';
+function ChartBar(props) {
     let barFillHeight= '0%';
-    if (props.max > 0) {
+    if (props.maxValue > 0) {
         barFillHeight = 
-            Math.round((props.vale / props.maxValue) * 100) + '%';
+            Math.round((props.value / props.maxValue) * 100) + '%';
     }
 
 
@@ -16,4 +16,4 @@ function Chart(props) {
         </div>
     );
 }
-export default Chart;
+export default ChartBar;
