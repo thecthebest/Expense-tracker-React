@@ -8,11 +8,11 @@ function ExpenseForm(props) {
     // State for storing Date
     const [enteredDate, setEnteredDate] = useState('');
     // Function for handling Title change
-    const titleChangeHandler = (event) => {setEnteredTitle(event.target.value);};
+    const titleChangeHandler = (event) => { setEnteredTitle(event.target.value); };
     // Function for handling Title change
-    const amountChangeHandler = (event) => {setEnteredamount(event.target.value);};
+    const amountChangeHandler = (event) => { setEnteredamount(event.target.value); };
     // Function for handling Title change
-    const dateChangeHandler = (event) => {setEnteredDate(event.target.value);};
+    const dateChangeHandler = (event) => { setEnteredDate(event.target.value); };
     // Function for handling Submission
     const submitHandler = (event) => {
         // Stop browser from refreshing when submitting the form
@@ -47,6 +47,7 @@ function ExpenseForm(props) {
                 </div>
             </div>
             <div className="new-expense__actions">
+                <button type="button" onClick={props.onCancel}>Cancel</button>
                 <button type="submit">Add Expense</button>
             </div>
         </form>
