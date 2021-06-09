@@ -20,7 +20,7 @@ function ExpenseForm(props) {
         // const for storing different values in an object
         const expenseData = {
             title: enteredTitle,
-            amount: enteredamount,
+            amount: +enteredamount,
             date: new Date(enteredDate)
         };
         // Pass the data from this component to the above
