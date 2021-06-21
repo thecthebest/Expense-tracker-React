@@ -1,4 +1,5 @@
 import './ChartBar.css';
+// Render each chart bar
 function ChartBar(props) {
     let barFillHeight= '0%';
     if (props.maxValue > 0) {

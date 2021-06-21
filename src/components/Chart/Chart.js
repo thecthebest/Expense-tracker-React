@@ -1,5 +1,6 @@
 import ChartBar from './ChartBar';
 import './Chart.css';
+// Render each chart bar
 function Chart(props) {
     const dataPointValues = props.dataPoints.map(
         (dataPoint) => {

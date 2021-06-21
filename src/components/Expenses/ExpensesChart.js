@@ -1,4 +1,5 @@
 import Chart from '../Chart/Chart';
+// Render charts bars
 function ExpensesChart(props) {
     const chartDataPoints = [
         {label: 'Jan', value: 0},

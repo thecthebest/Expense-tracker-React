@@ -1,7 +1,9 @@
 import { useState } from 'react';
 import Expenses from './components/Expenses/Expenses';
 import NewExpense from './components/NewExpense/NewExpense';
+// Render function
 function App() {
+  // Dummy data
     const Dummy_Expenses = [
         {
           id: 'e1',
@@ -24,6 +26,7 @@ function App() {
         },
       ];
       const [expenses, setExpenses] = useState(Dummy_Expenses);
+      // Function form to update the new value based on the old
       const addExpenseHandler = (expense) => {
         setExpenses((previousExpense) => {
           return [expense, ...previousExpense];

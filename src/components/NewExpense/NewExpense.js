@@ -14,9 +14,11 @@ function NewExpense(props) {
         props.onAddExpense(expenseData);
         setIsEditing(false);
     };
+    // Add new expense
     const startEditingHandler = () => {
         setIsEditing(true);
     };
+    // Cancel new expense
     const stopEditingHandler = () => {
         setIsEditing(false);
     };

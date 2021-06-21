@@ -1,5 +1,5 @@
 import './ExpensesFilter.css';
-
+// Render a select option
 const ExpensesFilter = (props) => {
     const dropDownChangeHandler = (event) => {
         // // Pass the data from this component to the above

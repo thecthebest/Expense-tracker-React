@@ -1,5 +1,6 @@
 import ExpenseItem from './ExpenseItem';
 import './ExpensesList.css';
+// Render a list of items
 function ExpensesList(props) {
     if (props.items.length === 0) {
         return (
